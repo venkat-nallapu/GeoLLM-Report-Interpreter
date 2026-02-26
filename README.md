@@ -41,4 +41,6 @@ GeoLLM-Report-Interpreter/
 ├── pyproject.toml           # Optional: if using poetry/ modern packaging
 └── docs/                    # Documentation, literature notes, meeting logs
     └── literature_review.md
+
 ```
+26/02/2026
