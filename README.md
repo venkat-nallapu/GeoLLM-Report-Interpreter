@@ -43,4 +43,40 @@ GeoLLM-Report-Interpreter/
     └── literature_review.md
 
 ```
-26/02/2026
+15/03/2026
+
+
+
+                ┌──────────────────────────────┐
+                │        User Applications     │
+                │  (Chatbot / API / UI)       │
+                └──────────────┬──────────────┘
+                               │
+                        API Gateway
+                               │
+                ┌──────────────▼──────────────┐
+                │     LLM Orchestration Layer │
+                │  Prompt templates / Agents  │
+                └──────────────┬──────────────┘
+                               │
+               ┌───────────────▼────────────────┐
+               │  Retrieval Layer (RAG System)  │
+               │  Embeddings + Vector Database  │
+               └───────────────┬────────────────┘
+                               │
+                     ┌─────────▼─────────┐
+                     │   LLM Inference   │
+                     │   Model Serving   │
+                     └─────────┬─────────┘
+                               │
+                ┌──────────────▼──────────────┐
+                │   Model Training / Tuning   │
+                │ (LoRA, RLHF, PEFT, etc.)    │
+                └──────────────┬──────────────┘
+                               │
+                ┌──────────────▼──────────────┐
+                │ Data Pipeline & Processing  │
+                │  ingestion → cleaning       │
+                └──────────────┬──────────────┘
+                               │
+                    Data Lake / Storage
