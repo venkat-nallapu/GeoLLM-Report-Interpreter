@@ -84,7 +84,7 @@ GeoLLM-Report-Interpreter/
 
 -----
 
-
-
+## GeoLLM rag architecture
+![.](assests/geollm_rag_architecture.svg)
 
 
